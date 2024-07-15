@@ -34,6 +34,9 @@
 
         document.addEventListener('DOMContentLoaded', function () {
             const dfMessenger = document.querySelector('df-messenger');
+            dfMessenger.projectId = 'abacus-apigee-demo';
+            dfMessenger.agentId = 'dac65458-13d9-4103-a684-79083790958e';
+            
             dfMessenger.addEventListener('df-messenger-loaded', function(event) {
                 console.log('Dialogflow Messenger loaded');
             });
